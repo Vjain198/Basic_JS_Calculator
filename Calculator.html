@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Javascript Calculator</title>
+        <style>
+             body{
+                background-color: saddlebrown;
+             }
+            h1{
+                color: white;
+                margin-top: 52px;
+                margin-left: 31rem;
+                font-size: 50px;
+            }
+            #clear{
+                width: 22rem;
+            }
+
+            .formstyle{
+                width: 400px;
+                height: 465px;
+                margin: auto;
+                margin-top:32px;
+                padding-top: 10px;
+                border: 10px solid red;
+            }
+            input{
+                width: 100px;
+                height: 30px;
+                margin-top: 10px;
+                margin-left: 24px;
+                background-color: red;
+                color: blanchedalmond;
+                font-size: 20px;
+            }
+
+            #display{
+                    width: 22rem;
+                    height: 5rem;
+                    margin-bottom: 10px;
+                    background-color: blanchedalmond;
+                    color: crimson;
+                    font-size: 40px;
+                            
+                }
+        </style>
+    </head>
+    <body>
+        <h1>Basic Calculator</h1>
+        <div class="formstyle">
+            <form name="form">
+                <input type="text" name="Ans_Screen" id="display">
+                <br><br>
+
+                <input type="button" value="1" onclick="form.Ans_Screen.value +='1' ">
+                <input type="button" value="2" onclick="form.Ans_Screen.value +='2' ">
+                <input type="button" value="3" onclick="form.Ans_Screen.value +='3' ">
+                
+                <br><br>
+
+                <input type="button" value="4" onclick="form.Ans_Screen.value +='4' ">
+                <input type="button" value="5" onclick="form.Ans_Screen.value +='5' ">
+                <input type="button" value="6" onclick="form.Ans_Screen.value +='6' ">
+
+                <br><br>
+                <input type="button" value="7" onclick="form.Ans_Screen.value +='7' ">
+                <input type="button" value="8" onclick="form.Ans_Screen.value +='8' ">
+                <input type="button" value="9" onclick="form.Ans_Screen.value +='9' ">
+
+                <br><br>
+                <input type="button" value="+" onclick="form.Ans_Screen.value +='+' ">
+                <input type="button" value="-" onclick="form.Ans_Screen.value +='-' ">
+                <input type="button" value="*" onclick="form.Ans_Screen.value +='*' ">
+
+                <br><br>
+                <input type="button" value="/" onclick="form.Ans_Screen.value +='/' ">
+                <input type="button" value="0" onclick="form.Ans_Screen.value +='0' ">
+                <input type="button" value="=" onclick="form.Ans_Screen.value = eval(form.Ans_Screen.value) ">
+
+                <br><br>
+                <input type="button" value="Clear All" onclick="form.Ans_Screen.value = ''" id="clear">
+            </form>
+        </div>
+    </body>
+</html>
